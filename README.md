@@ -7,6 +7,8 @@
 
 A library to subscribe to GCM/FCM and receive notifications.
 
+(Forked from crow-misia/go-push-receiver with GCM checkin optional)
+
 This library was developed inspired by push-receiver (https://github.com/MatthieuLemoine/push-receiver/).
 
 ## Build
