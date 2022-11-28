@@ -35,6 +35,7 @@ type Client struct {
 	heartbeat            *Heartbeat
 	receivedPersistentID []string
 	Events               chan Event
+	gcmCheckin			 bool
 }
 
 // New returns a new FCM push receive client instance.

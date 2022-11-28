@@ -37,6 +37,13 @@ func WithReceivedPersistentID(ids []string) ClientOption {
 	}
 }
 
+// WithGCMCheckin is gcmCheckin setter
+func WithGCMCheckin(checkin bool) ClientOption {
+	return func(client *Client) {
+		client.gcmCheckin = checkin
+	}
+}
+
 // WithHTTPClient is http.Client setter
 func WithHTTPClient(c httpClient) ClientOption {
 	return func(client *Client) {
