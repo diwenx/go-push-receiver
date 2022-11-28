@@ -48,8 +48,6 @@ func (c *Client) Subscribe(ctx context.Context) {
 		} else {
 			if c.gcmCheckin {
 				_, err = c.checkIn(ctx, &checkInOption{c.creds.AndroidID, c.creds.SecurityToken})
-			} else{
-				log.Println("Skipped GCM Checkin")
 			}
 		}
 		if err == nil {
